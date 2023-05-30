@@ -5,8 +5,6 @@ class Favorite extends S.Model {}
 
 Favorite.init(
   {
-    userId: { type: S.STRING },
-    favId: { type: S.STRING },
     type: { type: S.STRING },
   },
   {

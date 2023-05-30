@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const SECRET = "NicoTMDB";
+const SECRET = process.env.SECRET;
 
 function generateToken(payload) {
   const token = jwt.sign({ payload }, SECRET, {

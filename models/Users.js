@@ -20,9 +20,10 @@ class User extends S.Model {
 
 User.init(
   {
-    fullname: { type: S.STRING },
-    email: { type: S.STRING, validate: { isEmail: true } },
-    password: { type: S.STRING },
+    name: { type: S.STRING, allowNull: false },
+    lastName: { type: S.STRING, allowNull: false },
+    email: { type: S.STRING, allowNull: false, validate: { isEmail: true } },
+    password: { type: S.STRING, allowNull: false },
     salt: { type: S.STRING },
   },
   {

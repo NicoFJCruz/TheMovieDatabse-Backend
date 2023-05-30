@@ -4,6 +4,6 @@ const user = require("./user");
 const favorites = require("./favorites");
 
 router.use("/fav", favorites);
-router.use("/user", user);
+router.use("/users", user);
 
 module.exports = router;
