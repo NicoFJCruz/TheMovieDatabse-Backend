@@ -1,0 +1,23 @@
+{
+  "name": "themoviedatabse-backend",
+  "version": "1.0.0",
+  "description": "Backend del proyecto TMDB remasterizada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoFJCruz/TheMovieDatabse-Backend.git"
+  },
+  "author": "Nicolás Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoFJCruz/TheMovieDatabse-Backend/issues"
+  },
+  "homepage": "https://github.com/NicoFJCruz/TheMovieDatabse-Backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
