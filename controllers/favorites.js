@@ -3,6 +3,12 @@ const { User, Favorite } = require("../models");
 
 const getFavUser = async (req, res, next) => {
   try {
+    if (!req.params.idUser) {
+      console.log("HOLA1");
+      return res.status(404).send("No se encontró el usuario");
+    }
+    
+
     const favs = await Favorite.findAll({
       where: { userId: req.params.idUser },
     });
@@ -13,6 +19,7 @@ const getFavUser = async (req, res, next) => {
 
     res.status(200).send(favs);
   } catch (error) {
+    console.log("HOLA3");
     console.log(error);
     next(error);
   }
