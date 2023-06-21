@@ -9,7 +9,7 @@ const ORIGIN = process.env.ORIGIN || "http://localhost:5173";
 
 const corsOptions = {
   credentials: true,
-  origin: "http://localhost:5173",
+  origin: ORIGIN,
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization",
 
