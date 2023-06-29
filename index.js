@@ -3,6 +3,7 @@ const db = require("./db");
 const routes = require("./routes/index");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 const ORIGIN = process.env.ORIGIN || "http://localhost:5173";
